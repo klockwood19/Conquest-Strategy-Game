@@ -1,0 +1,3 @@
+10/31/17: Finished Map Reader and integrated with Agent Move method. Agents can now move between locations.
+Used dictionary to store spaces rather than graph. 
+Main method in Game class has example for Agent moving between spaces. 
