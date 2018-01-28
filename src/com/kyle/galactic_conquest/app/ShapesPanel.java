@@ -108,7 +108,7 @@ public class ShapesPanel extends JPanel implements MouseListener{
 	@Override
 	public void mouseExited(MouseEvent arg0) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("omething");
 	}
 	@Override
 	public void mousePressed(MouseEvent arg0) {
