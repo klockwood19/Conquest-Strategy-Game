@@ -1,3 +1,6 @@
 10/31/17: Finished Map Reader and integrated with Agent Move method. Agents can now move between locations.
 Used dictionary to store spaces rather than graph. 
 Main method in Game class has example for Agent moving between spaces. 
+1/24/18: Worked on commanders csv file. Each commander gives their army a bonus. Commanders can replenish their armies using troops 
+their respective regions. If their army is defeated, the commander is either killed (chance of death), or captured (1 - chance of death)
+You can only replenish an army if the commander is still alive/not captured. 

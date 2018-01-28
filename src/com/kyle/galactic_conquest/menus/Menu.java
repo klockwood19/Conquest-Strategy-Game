@@ -85,7 +85,7 @@ public class Menu extends Application{
 		}
 	}
 	
-	private static class MenuButton extends StackPane {
+	public static class MenuButton extends StackPane {
 		private Text text;
 		
 		public MenuButton(String name) {

@@ -14,9 +14,11 @@ import javax.swing.JPanel;
 import com.kyle.galactic_conquest.game.Game;
 import com.kyle.galactic_conquest.game.Window;
 
-public class Start_Menu extends Window {
+public class Start_Panel extends Window {
 	
-	public Start_Menu (Game game) {
+	JPanel start_panel = new JPanel();
+	
+	public Start_Panel (Game game) {
 		super(1000, 600, "Conquest", game);
 		
 		// create buttons
@@ -25,7 +27,6 @@ public class Start_Menu extends Window {
 		JButton help = new JButton("HELP");
 		
 		// create and add JPanels
-		JPanel start_panel = new JPanel();
 		start_panel.setBounds(0, 0, 1000, 600);
 		start_panel.setBackground(Color.BLACK);
 		
@@ -33,8 +34,6 @@ public class Start_Menu extends Window {
 		start_panel.add(load_game);
 		start_panel.add(help);
 		start_panel.setVisible(true);
-		
-		this._frame.add(start_panel);
 		
 		
 		new_game.addActionListener(new ActionListener() {
@@ -45,7 +44,6 @@ public class Start_Menu extends Window {
 				ArrayList<String> maps = new ArrayList<String>();
 				Map_Menu map_menu = new Map_Menu(maps);
 				JPanel map_panel = map_menu.getMapPanel();
-				_frame.add(map_panel);
 				map_panel.setVisible(true);
 				
 				
@@ -86,6 +84,8 @@ public class Start_Menu extends Window {
 		
 	}
 
-	{}
+	public JPanel getPanel() {
+		return this.start_panel;
+	}
 
 }
